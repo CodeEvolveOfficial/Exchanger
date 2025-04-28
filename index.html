@@ -35,11 +35,7 @@ https://templatemo.com/tm-578-first-portfolio
     
     <body>
 
-        <section class="preloader">
-            <div class="spinner">
-                <span class="spinner-rotate"></span>    
-            </div>
-        </section>
+   
 
         <nav class="navbar navbar-expand-lg">
             <div class="container">
@@ -48,7 +44,7 @@ https://templatemo.com/tm-578-first-portfolio
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <a href="index.html" class="navbar-brand mx-auto mx-lg-0">First</a>
+                <a href="index.html" class="navbar-brand mx-auto mx-lg-0">Developer Hasebur</a>
 
                 <div class="d-flex align-items-center d-lg-none">
                     <i class="navbar-icon bi-telephone-plus me-3"></i>
@@ -60,19 +56,19 @@ https://templatemo.com/tm-578-first-portfolio
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-lg-5">
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_1">Home</a>
+                            <a class="nav-link click-scroll" href="#section_1">Showcase</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_2">About</a>
+                            <a class="nav-link click-scroll" href="#section_2">Services</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_3">Services</a>
+                            <a class="nav-link click-scroll" href="#section_3">About</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_4">Projects</a>
+                            <a class="nav-link click-scroll" href="#section_4">Tutorials</a>
                         </li>
 
                         <li class="nav-item">
@@ -122,135 +118,543 @@ https://templatemo.com/tm-578-first-portfolio
             </section>
 
 
-            <section class="about section-padding" id="section_2">
-                <div class="container">
-                    <div class="row">
 
-                        <div class="col-lg-6 col-12">
-                            <img src="images/couple-working-from-home-together-sofa.jpg" class="about-image img-fluid" alt="">
+
+
+          
+          
+          
+            <section class='showcase showx' id='Show'>
+                <h3 class='text-center'>Shopify</h3>
+<style>
+section#Show {
+ margin-top: 20px;
+}
+/* Responsive layout styles */
+
+.tabs {
+ display: flex;
+ justify-content: space-between; /* Ensure even spacing for all buttons */
+ gap: 5px; /* Reduce gap for smaller screens */
+ flex-wrap: nowrap; /* Prevent wrapping */
+ margin-bottom: 20px;
+}
+
+.tabs button {
+ flex: 1; /* Make all buttons take up equal space */
+ padding: 8px 10px; /* Adjust padding for smaller buttons */
+ border: none;
+ background-color: #f4f4f4;
+ cursor: pointer;
+ font-size: 14px; /* Decrease font size for smaller screens */
+ min-width: 70px; /* Reduce the minimum width for buttons */
+ border-radius: 5px;
+ text-align: center;
+ white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.tabs button.active {
+ background-color: #515B9D;
+ color: white;
+}
+
+
+.grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+ gap: 15px;
+}
+
+.grid-item {
+ position: relative;
+ overflow: hidden;
+ text-align: center;
+ border: 1px solid #ddd;
+ border-radius: 5px;
+ padding: 10px;
+ background-color: #fff;
+}
+
+.grid-item img {
+ width: 100%;
+ height: auto;
+ border-radius: 5px;
+}
+
+.grid-item .text {
+ margin-top: 10px;
+ font-size: 14px;
+ color: #333;
+}
+
+.load-more-container {
+ text-align: center;
+ margin-top: 20px;
+}
+
+.load-more-container button {
+ padding: 10px 20px;
+ border: none;
+ background-color: #515B9D;
+ color: white;
+ font-size: 16px;
+ border-radius: 5px;
+ cursor: pointer;
+}
+
+.load-more-container button:hover {
+ background-color: #14B789;
+}
+
+
+
+  /* 5 items per row on desktop */
+@media (min-width: 1024px) {
+ .grid {
+   grid-template-columns: repeat(5, 1fr);
+ }
+}
+
+/* Adjust grid for tablets and smaller screens */
+@media (max-width: 1024px) {
+ .grid {
+   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+ }
+}
+
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+ .tabs button {
+   font-size: 14px;
+   padding: 8px 15px;
+   min-width: 100px;
+ }
+
+ .grid-item .text {
+   font-size: 12px;
+ }
+
+ .load-more-container button {
+   font-size: 14px;
+   padding: 8px 15px;
+ }
+}
+
+@media (max-width: 480px) {
+.tabs {
+   gap: 2px; /* Minimize gaps between buttons on very small screens */
+ }
+
+ .tabs button {
+   padding: 6px 8px; /* Further reduce padding for narrow screens */
+   font-size: 12px; /* Smaller font size */
+   min-width: 50px; /* Minimum width reduced for small screens */
+ }
+
+ .grid-item .text {
+   font-size: 10px;
+ }
+
+ .load-more-container button {
+   font-size: 12px;
+   padding: 6px 10px;
+ }
+}
+</style>
+
+<div class='container'>
+<div class='tabs'>
+ <button class='active' onclick='filterImages(&apos;all&apos;, event)'>All</button>
+ <button onclick='filterImages(&apos;beauty&apos;, event)'>Beauty</button>
+ <button onclick='filterImages(&apos;accessories&apos;, event)'>Add-ons</button>
+ <button onclick='filterImages(&apos;shop&apos;, event)'>Shop</button>
+ <button onclick='filterImages(&apos;clothes&apos;, event)'>Clothes</button>
+ <button onclick='filterImages(&apos;pets&apos;, event)'>Pets</button>
+</div>
+
+<div class='grid' id='imageGrid'/>
+
+<!-- Load More Button Row -->
+<div class='load-more-container' id='loadMoreContainer'>
+ <button id='loadMoreButton' onclick='loadMoreItems()'>Load More</button>
+</div>
+
+<!-- Show Less Button Row -->
+<div class='load-more-container' id='showLessContainer' style='display: none;'>
+ <button class='scrolling' data-target='.showx' id='showLessButton' onclick='showLessItems()'>Show Less</button>
+</div>
+</div>
+
+ <script type='text/javascript'>//<![CDATA[
+const websites = [
+ { url: "https://luminouslayers.net/", category: "beauty" },
+ { url: "https://beautifycosmetics.net/", category: "beauty" },
+ { url: "https://glowify.pro/", category: "beauty" },
+ { url: "https://rnbodytransformations.com/", category: "beauty" },
+ { url: "https://unimatics.services/", category: "clothes" },
+ { url: "https://happyplace.today/", category: "clothes" },
+ { url: "https://todoclick.lat/", category: "clothes" },
+ { url: "https://vatstore.net/", category: "clothes" },
+ { url: "https://opulentscents.net/", category: "accessories" },
+ { url: "https://findyourrhythm.net/", category: "accessories" },
+ { url: "https://bestoftrends.net/", category: "accessories" },
+ { url: "https://aeroscent.net/", category: "accessories" },
+ { url: "https://antojosdelsur.net/", category: "accessories" },
+ { url: "https://relaxinghumidifiers.com/shop", category: "accessories" },
+ { url: "https://trunktidy.net/", category: "accessories" },
+ { url: "https://sewingsolutions.services/", category: "accessories" },
+ { url: "https://boomsy.lat/shop", category: "accessories" },
+ { url: "https://globalmerca.lat/shop", category: "accessories" },
+ { url: "https://todoen1.net/", category: "shop" },
+ { url: "https://cappy.live/", category: "shop" },
+ { url: "https://nkrshop.xyz/", category: "shop" },
+ { url: "https://stitchandgifts.net/shop", category: "shop" },
+ { url: "https://buygoodsproducts.net/shop", category: "shop" },
+ { url: "https://espressoyou.net/", category: "shop" },
+ { url: "https://perfectlysweet.net/", category: "pets" },
+ { url: "https://andesmarket.xyz/", category: "pets" },
+ { url: "https://pawwonders.pro/", category: "pets" },
+];
+
+let itemsToShow = 10;
+let activeCategory = 'all';
+let filteredWebsites = [];
+
+function filterImages(category, event) {
+ activeCategory = category;
+ const buttons = document.querySelectorAll('.tabs button');
+ buttons.forEach(button => button.classList.remove('active'));
+ event.target.classList.add('active');
+
+ itemsToShow = 10; // Reset items to show
+ initializeGrid();
+}
+
+function initializeGrid() {
+ const grid = document.getElementById('imageGrid');
+ const loadMoreContainer = document.getElementById('loadMoreContainer');
+ const showLessContainer = document.getElementById('showLessContainer');
+ grid.innerHTML = ''; // Clear the grid before populating it again
+
+ // Filter websites based on active category
+ filteredWebsites = websites.filter(site => activeCategory === 'all' || site.category === activeCategory);
+
+ // Populate grid with the filtered websites
+ filteredWebsites.slice(0, itemsToShow).forEach(site => {
+   const div = document.createElement('div');
+   div.classList.add('grid-item');
+   div.setAttribute('data-category', site.category);
+
+   div.innerHTML = `
+     <a href="${site.url}" target="_blank">
+       <img src="//image.thum.io/get/${site.url}" alt="${getWebsiteName(site.url)}">
+     </a>
+     <div class="text">${getWebsiteName(site.url)}</div>
+   `;
+   grid.appendChild(div);
+ });
+
+ // Show or hide buttons
+ loadMoreContainer.style.display = filteredWebsites.length > itemsToShow ? 'block' : 'none';
+ showLessContainer.style.display = itemsToShow > 10 ? 'block' : 'none';
+}
+
+function loadMoreItems() {
+ itemsToShow += 5; // Show 5 more items
+ initializeGrid();
+}
+
+function showLessItems() {
+ itemsToShow = 10; // Reset to initial 10 items
+ initializeGrid();
+}
+
+function getWebsiteName(url) {
+ return url.replace(/^https?:\/\/(www\.)?/, '').split('.')[0];
+}
+
+// Initialize grid with all items shown initially
+initializeGrid();
+
+
+
+
+
+
+     
+     //]]>
+ 
+ </script>
+
+
+ 
+       </section>
+
+          
+          
+       <section class='showcase showx' id='ShowSection2'>
+        <h3 class='text-center'>WordPress</h3>
+        <style>
+          section#ShowSection2 {
+            margin-top: 20px;
+          }
+          /* Similar responsive styles for the second section */
+          #ShowSection2 .tabs {
+            display: flex;
+            justify-content: space-between;
+            gap: 5px;
+            flex-wrap: nowrap;
+            margin-bottom: 20px;
+          }
+      
+          #ShowSection2 .tabs button {
+            flex: 1;
+            padding: 8px 10px;
+            border: none;
+            background-color: #f4f4f4;
+            cursor: pointer;
+            font-size: 14px;
+            min-width: 70px;
+            border-radius: 5px;
+            text-align: center;
+            white-space: nowrap;
+          }
+      
+          #ShowSection2 .tabs button.active {
+            background-color: #515B9D;
+            color: white;
+          }
+      
+          #ShowSection2 .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+          }
+      
+          #ShowSection2 .grid-item {
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #fff;
+          }
+      
+          #ShowSection2 .grid-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+          }
+      
+          #ShowSection2 .grid-item .text {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #333;
+          }
+      
+          #ShowSection2 .load-more-container {
+            text-align: center;
+            margin-top: 20px;
+          }
+      
+          #ShowSection2 .load-more-container button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #515B9D;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+      
+          #ShowSection2 .load-more-container button:hover {
+            background-color: #14B789;
+          }
+        </style>
+      
+        <div class='container'>
+          <div class='tabs'>
+            <button class='active' onclick='filterImagesSection2(&apos;all&apos;, event)'>All</button>
+            <button onclick='filterImagesSection2(&apos;blogging&apos;, event)'>Blog</button>
+            <button onclick='filterImagesSection2(&apos;ecommerce&apos;, event)'>E-Commerce</button>
+            <button onclick='filterImagesSection2(&apos;services&apos;, event)'>Services</button>
+          </div>
+      
+          <div class='grid' id='imageGridSection2'/>
+      
+          <!-- Load More Button Row -->
+          <div class='load-more-container' id='loadMoreContainerSection2'>
+            <button id='loadMoreButtonSection2' onclick='loadMoreItemsSection2()'>Load More</button>
+          </div>
+      
+          <!-- Show Less Button Row -->
+          <div class='load-more-container' id='showLessContainerSection2' style='display: none;'>
+            <button id='showLessButtonSection2' onclick='showLessItemsSection2()'>Show Less</button>
+          </div>
+        </div>
+      
+        <script type='text/javascript'>//<![CDATA[
+          const websitesSection2 = [
+            { url: "https://tinysalt.loftocean.com/elementor/food-blog-light/", category: "blogging" },
+            { url: "https://wanderaway.qodeinteractive.com/dolomites/", category: "blogging" },
+            { url: "https://squaretypetheme.com/squaretype/", category: "blogging" },
+            { url: "https://demo.casethemes.net/organio/home-2/", category: "ecommerce" },
+            { url: "https://welldone.axiomthemes.com/nutrition-store/", category: "ecommerce" },
+            { url: "https://alukas.presslayouts.com/home-v12/?layout=v12", category: "ecommerce" },
+            { url: "https://tebewebe.online/furrescue/template-kit/homepage/", category: "services" },
+            { url: "https://live.21lab.co/kiraz/", category: "services" },
+            { url: "https://tronix.themepul.com/cyber-security-demo/home-one-page/", category: "services" },
+          ];
+      
+          let itemsToShowSection2 = 10;
+          let activeCategorySection2 = 'all';
+          let filteredWebsitesSection2 = [];
+      
+          function filterImagesSection2(category, event) {
+            activeCategorySection2 = category;
+            const buttons = document.querySelectorAll('#ShowSection2 .tabs button');
+            buttons.forEach(button => button.classList.remove('active'));
+            event.target.classList.add('active');
+      
+            itemsToShowSection2 = 10; // Reset items to show
+            initializeGridSection2();
+          }
+      
+          function initializeGridSection2() {
+            const grid = document.getElementById('imageGridSection2');
+            const loadMoreContainer = document.getElementById('loadMoreContainerSection2');
+            const showLessContainer = document.getElementById('showLessContainerSection2');
+            grid.innerHTML = ''; // Clear the grid before populating it again
+      
+            // Filter websites based on active category
+            filteredWebsitesSection2 = websitesSection2.filter(
+              site => activeCategorySection2 === 'all' || site.category === activeCategorySection2
+            );
+      
+            // Populate grid with the filtered websites
+            filteredWebsitesSection2.slice(0, itemsToShowSection2).forEach(site => {
+              const div = document.createElement('div');
+              div.classList.add('grid-item');
+              div.setAttribute('data-category', site.category);
+      
+              div.innerHTML = `
+                <a href="${site.url}" target="_blank">
+                  <img src="//image.thum.io/get/${site.url}" alt="${getWebsiteNameSection2(site.url)}">
+                </a>
+                <div class="text">${getWebsiteNameSection2(site.url)}</div>
+              `;
+              grid.appendChild(div);
+            });
+      
+            // Show or hide buttons
+            loadMoreContainer.style.display = filteredWebsitesSection2.length > itemsToShowSection2 ? 'block' : 'none';
+            showLessContainer.style.display = itemsToShowSection2 > 10 ? 'block' : 'none';
+          }
+      
+          function loadMoreItemsSection2() {
+            itemsToShowSection2 += 5; // Show 5 more items
+            initializeGridSection2();
+          }
+      
+          function showLessItemsSection2() {
+            itemsToShowSection2 = 10; // Reset to initial 10 items
+            initializeGridSection2();
+          }
+      
+          function getWebsiteNameSection2(url) {
+            return url.replace(/^https?:\/\/(www\.)?/, '').split('.')[0];
+          }
+      
+          // Initialize grid with all items shown initially
+          initializeGridSection2();
+        //]]>
+        </script>
+      </section>
+      
+
+
+
+
+    
+          
+          
+      <section class='about section-padding' id='About_Me'>
+        <div class='container'>
+            <div class='row'>
+
+                <div class='col-lg-6 col-12'>
+                    <img alt='' class='about-image img-fluid' src='https://templatemo.com/templates/templatemo_578_first_portfolio/images/couple-working-from-home-together-sofa.jpg'>
+                </img>
+                </div>
+
+                <div class='col-lg-6 col-12 mt-5 mt-lg-0'>
+                    <div class='about-thumb'>
+
+                        <div class='section-title-wrap d-flex justify-content-end align-items-center mb-4'>
+                            <h2 class='text-white me-4 mb-0'>My Story</h2>
+
+                            <img alt='' class='avatar-image img-fluid' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiW72VptIoKhH8W7GLRrTiPmBmp6DflAj6VV2mHT8e_Bdqm756MzHnv2X_I1pp4ItylLuf2ZgwP9R53mVQCgIphftXZANOaj2IV5sV8INAntGOGDzIybs_TaSZISUptNN2Cq_JRB2DHxp1qzaKOLW3H8EQ8aTl60CqLDu9peBI4GDXOPTZJ_4A2qDDiDA/s320/Gazi%20Hasebur%20Rahaman%20OPY.jpg'>
+                        </img>
                         </div>
 
-                        <div class="col-lg-6 col-12 mt-5 mt-lg-0">
-                            <div class="about-thumb">
+                        <h3 class='pt-2 mb-3'>a little bit about Hasebur</h3>
 
-                                <div class="section-title-wrap d-flex justify-content-end align-items-center mb-4">
-                                    <h2 class="text-white me-4 mb-0">My Story</h2>
+                        <p>This is Hasebur. A man who believes if you want to change the world, change yourself and teach others how they also can change them. A person is not just just a person..everyone carries a whole universe with them. </p>
 
-                                    <img src="images/happy-bearded-young-man.jpg" class="avatar-image img-fluid" alt="">
-                                </div>
-
-                                <h3 class="pt-2 mb-3">a little bit about Joshua</h3>
-
-                                <p>This one-page HTML portfolio is provided by <a href="https://templatemo.com" target="_blank">TemplateMo</a>. This layout is based on Bootstrap v5.1.3 CSS and JS libraries. Image credits go to <a href="https://unsplash.com" target="_blank">Unsplash</a> and <a href="https://freepik.com" target="_blank">FreePik</a> for images used in this page.</p>
-
-                                <p>You are allowed to use this template for your websites. You are not allowed to redistribute the template ZIP file on any other website. Please <a href="https://templatemo.com/contact" target="_blank">contact us</a> for more info.</p>
-                            </div>
-                        </div>
-
+                        <p>I&#8217;m a Website Developer. I will fulfill all your needs in website. The person who you can trust in your online business.  <br/>Please <a href='https://www.facebook.com/developerhasebur/' target='_blank'><b>Contact Me</b></a> for more info.</p>
                     </div>
                 </div>
-            </section>
 
-            <section class="featured section-padding">
-                <div class="container">
-                    <div class="row">
+            </div>
+        </div>
+    </section>
 
-                        <div class="col-lg-6 col-12">
-                            <div class="profile-thumb">
-                                <div class="profile-title">
-                                    <h4 class="mb-0">Information</h4>
-                                </div>
 
-                                <div class="profile-body">
-                                    <p>
-                                        <span class="profile-small-title">Name</span> 
-                                        <span>Joshua Morgan</span>
-                                    </p>
+    <section class='clients section-padding'>
+        <div class='container'>
+            <div class='row align-items-center'>
 
-                                    <p>
-                                        <span class="profile-small-title">Birthday</span> 
-                                        <span>Aug 12, 1986</span>
-                                    </p>
-
-                                    <p>
-                                        <span class="profile-small-title">Phone</span> 
-                                         <span><a href="tel: 305-240-9671">120-240-9600</a></span>
-                                    </p>
-
-                                    <p>
-                                        <span class="profile-small-title">Email</span> 
-                                        <span><a href="mailto:hello@josh.design">hello@josh.design</a></span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-12 mt-5 mt-lg-0">
-                            <div class="about-thumb">
-                                <div class="row">
-                                    <div class="col-lg-6 col-6 featured-border-bottom py-2">
-                                        <strong class="featured-numbers">20+</strong>
-
-                                        <p class="featured-text">Years of Experiences</p>
-                                    </div>
-
-                                    <div class="col-lg-6 col-6 featured-border-start featured-border-bottom ps-5 py-2">
-                                        <strong class="featured-numbers">245</strong>
-
-                                        <p class="featured-text">Happy Customers</p>
-                                    </div>
-
-                                    <div class="col-lg-6 col-6 pt-4">
-                                        <strong class="featured-numbers">640</strong>
-
-                                        <p class="featured-text">Project Finished</p>
-                                    </div>
-
-                                    <div class="col-lg-6 col-6 featured-border-start ps-5 pt-4">
-                                        <strong class="featured-numbers">72+</strong>
-
-                                        <p class="featured-text">Digital Awards</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
+                <div class='col-lg-12 col-12'>
+                    <h3 class='text-center mb-5'>Find me here</h3>
                 </div>
-            </section>
 
-
-            <section class="clients section-padding">
-                <div class="container">
-                    <div class="row align-items-center">
-
-                        <div class="col-lg-12 col-12">
-                            <h3 class="text-center mb-5">Companies I've had worked</h3>
-                        </div>
-
-                        <div class="col-lg-2 col-4 ms-auto clients-item-height">
-                            <img src="images/clients/cachet.svg" class="clients-image img-fluid" alt="">
-                        </div>
-
-                        <div class="col-lg-2 col-4 clients-item-height">
-                            <img src="images/clients/guitar-center.svg" class="clients-image img-fluid" alt="">
-                        </div>
-
-                        <div class="col-lg-2 col-4 clients-item-height">
-                            <img src="images/clients/tokico.svg" class="clients-image img-fluid" alt="">
-                        </div>
-
-                        <div class="col-lg-2 col-4 clients-item-height">
-                            <img src="images/clients/shopify.svg" class="clients-image img-fluid" alt="">
-                        </div>
-
-                        <div class="col-lg-2 col-4 me-auto clients-item-height">
-                            <img src="images/clients/profil-rejser.svg" class="clients-image img-fluid" alt="">
-                        </div>
-
-                    </div>
+                <div class='col-lg-2 col-4 ms-auto clients-item-height'>
+                    <img alt='' class='clients-image img-fluid' src='https://static.cdnlogo.com/logos/f/88/freelancer.svg'/><br/>
+                  <a class='aacbs' href='https://www.freelancer.com/u/developerhasebur' target='_blank'>VIEW PROFILE</a>
                 </div>
-            </section>
+
+                <div class='col-lg-2 col-4 clients-item-height'>
+                    <img alt='' class='clients-image img-fluid' src='https://static.cdnlogo.com/logos/f/4/fiverr.svg'/><br/>
+                   <a class='aacbs' href='https://www.fiverr.com/s/LdNRGPa' target='_blank'>VIEW PROFILE</a>
+                </div>
+
+                <div class='col-lg-2 col-4 clients-item-height'>
+                    <img alt='' class='clients-image img-fluid' src='https://static.cdnlogo.com/logos/f/10/facebook.svg'/><br/>
+                      <a class='aacbs' href='https://www.facebook.com/developerhasebur/' target='_blank'>VIEW PROFILE</a>
+                </div>
+
+                <div class='col-lg-2 col-4 clients-item-height'>
+                    <img alt='' class='clients-image img-fluid' src='https://static.cdnlogo.com/logos/l/74/linkedin.svg'/><br/>
+                       <a class='aacbs' href='https://www.linkedin.com/in/developer-hasebur/' target='_blank'>VIEW PROFILE</a>
+                </div>
+
+                <div class='col-lg-2 col-4 me-auto clients-item-height'>
+                    <img alt='' class='clients-image img-fluid' src='https://static.cdnlogo.com/logos/n/64/new-youtube.svg'/><br/>
+                   <a class='aacbs' href='https://www.youtube.com/@developerhasebur' target='_blank'>VIEW PROFILE</a>
+                </div>
+                                      <div class='col-lg-2 col-4 me-auto clients-item-height'>
+                    <img alt='' class='clients-image img-fluid' src='https://static.cdnlogo.com/logos/u/34/upwork.svg'/><br/>
+                      <a class='aacbs' href='https://www.upwork.com/freelancers/~01db44ee2dcde78548' target='_blank'>VIEW PROFILE</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
 
 
             <section class="services section-padding" id="section_3">
@@ -354,66 +758,139 @@ https://templatemo.com/tm-578-first-portfolio
                 </div>
             </section>
 
-
-            <section class="projects section-padding" id="section_4">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-8 col-md-8 col-12 ms-auto">
-                            <div class="section-title-wrap d-flex justify-content-center align-items-center mb-4">
-                                <img src="images/white-desk-work-study-aesthetics.jpg" class="avatar-image img-fluid" alt="">
-
-                                <h2 class="text-white ms-4 mb-0">Projects</h2>
-                            </div>
-                        </div>
-
-                        <div class="clearfix"></div>
-
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="projects-thumb">
-                                <div class="projects-info">
-                                    <small class="projects-tag">Branding</small>
-
-                                    <h3 class="projects-title">Zoik agency</h3>
-                                </div>
-
-                                <a href="images/projects/nikhil-KO4io-eCAXA-unsplash.jpg" class="popup-image">
-                                    <img src="images/projects/nikhil-KO4io-eCAXA-unsplash.jpg" class="projects-image img-fluid" alt="">
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="projects-thumb">
-                                <div class="projects-info">
-                                    <small class="projects-tag">Photography</small>
-
-                                    <h3 class="projects-title">The Watch</h3>
-                                </div>
-
-                                <a href="images/projects/the-5th-IQYR7N67dhM-unsplash.jpg" class="popup-image">
-                                    <img src="images/projects/the-5th-IQYR7N67dhM-unsplash.jpg" class="projects-image img-fluid" alt="">
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="projects-thumb">
-                                <div class="projects-info">
-                                    <small class="projects-tag">Website</small>
-
-                                    <h3 class="projects-title">Polo</h3>
-                                </div>
-
-                                <a href="images/projects/true-agency-9Bjog5FZ-oc-unsplash.jpg" class="popup-image">
-                                    <img src="images/projects/true-agency-9Bjog5FZ-oc-unsplash.jpg" class="projects-image img-fluid" alt="">
-                                </a>
-                            </div>
-                        </div>
-
+          
+            <section class='tutorials section-padding' id='Tutorials'>       
+          
+          
+                <style>
+                  .header-container {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 20px 0;
+                    padding: 10px 15px;
+                    border-bottom: 2px solid #ccc;
+                    flex-wrap: wrap; /* Allows the header elements to wrap on smaller screens */
+                  }
+                
+                  .header-title {
+                    font-size: 24px;
+                    font-weight: bold;
+                    color: #333;
+                    margin: 0;
+                    flex: 1; /* Ensures it takes up available space */
+                  }
+                
+                  .subscribe-button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                  }
+                
+                  /* Responsive Styles */
+                  @media (max-width: 1024px) {
+                    .header-container {
+                      flex-direction: column; /* Stack elements vertically on medium screens */
+                      align-items: flex-start; /* Align header title to the left */
+                    }
+                
+                    .header-title {
+                      font-size: 20px; /* Adjust title size for smaller screens */
+                      margin-bottom: 10px; /* Add space between title and subscribe button */
+                    }
+                
+                    .subscribe-button {
+                      justify-content: flex-start; /* Align the subscribe button to the left */
+                    }
+                  }
+                
+                  @media (max-width: 768px) {
+                  .header-container {
+                    align-items: center;
+                } 
+                    .header-title {
+                      font-size: 18px; /* Further reduce title size for small screens */
+                    }
+                
+                    .subscribe-button {
+                      width: 100%; /* Make the subscribe button full-width */
+                      justify-content: center; /* Center the subscribe button */
+                    }
+                  }
+                </style>
+                
+                <div class='header-container'>
+                    <h2 class='header-title'>WordPress &amp; Shopify Tutorials</h2>
+                    <div class='subscribe-button'>
+                        <!-- YouTube Subscribe Button Script -->
+                        <script src='https://apis.google.com/js/platform.js'/>
+                        <!-- YouTube Subscribe Button -->
+                        <div class='g-ytsubscribe' data-channelid='UCtoRDNSlZKCaukf5z7vN-tw' data-count='hidden' data-layout='full' data-theme='default'/>
                     </div>
                 </div>
-            </section>
+                
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                <style>
+                  .video-row {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+                    gap: 15px; /* Space between videos */
+                    margin: 20px 0;
+                  }
+                
+                  .video-item {
+                    aspect-ratio: 16 / 9; /* Maintain 16:9 video aspect ratio */
+                    box-sizing: border-box;
+                  }
+                
+                  .video-item iframe {
+                    width: 100%; /* Full width for iframe */
+                    height: 100%; /* Full height for iframe */
+                    display: block;
+                    border-radius: 5px; /* Optional: Rounded corners for a polished look */
+                  }
+                
+                  @media (max-width: 1024px) {
+                    .video-row {
+                      grid-template-columns: repeat(2, 1fr); /* 2 items per row on medium screens */
+                    }
+                  }
+                
+                  @media (max-width: 768px) {
+                    .video-row {
+                      grid-template-columns: 1fr; /* 1 item per row on small screens */
+                    }
+                  }
+                </style>
+                
+                
+                <div class='video-row'>
+                  <div class='video-item'>
+                    <iframe allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='allowfullscreen' frameborder='0' src='https://www.youtube.com/embed/kollr0ZvYc4?si=XcJ4YGQESfXuOert' title='YouTube video player'/>
+                  </div>
+                  <div class='video-item'>
+                    <iframe allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='allowfullscreen' frameborder='0' src='https://www.youtube.com/embed/WhB2BEhzR5g?si=aiLtSzMmqRDgJVCO' title='YouTube video player'/>
+                  </div>
+                  <div class='video-item'>
+                    <iframe allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='allowfullscreen' frameborder='0' src='https://www.youtube.com/embed/wGIxB2oIRJI?si=YD2gqiaVqhW6krmK' title='YouTube video player'/>
+                  </div>
+                
+                </div>
+                
+                          
+                          
+                          
+                          
+                          </section>
 
             <section class="contact section-padding" id="section_5">
                     <div class="container">
